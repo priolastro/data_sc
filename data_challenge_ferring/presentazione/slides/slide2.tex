@@ -1,0 +1,21 @@
+\begin{frame}
+\frametitle{Defining a Strategy}
+\metroset{block=fill}
+    \begin{exampleblock}{\textsc{Arbitrary assumptions}}
+        Based on the information on the provided data, I make three assumptions to implement my strategy:
+        \begin{itemize}
+            \item \textit{yref} is obtained through a spectrophotometer operating in the near infrared region (NIR)
+            \item \textit{yref} is probably the response of ingredient/s concentration or mixing/blending level of two or more ingredients. It is likely that these properties depens on a small interval of the spectrum (assuming mimimum signal overlap) 
+            \item Typically, linear laws (such as Lambert-Beer) govern the relation between absorption and response (excluding overtones occurring in IR absorption)
+        \end{itemize}
+        \end{exampleblock}
+\end{frame}
+%     \frametitle{Strategy}
+%     The integrity of the data test is tested in order to check the presence of null values (NaN), the normality of the distribution and the presence of outliers.\\
+%     Additional information on the measure, such as the propery studied, the sensibility of the instrument could be very useful in order to tailor better the strategy.\\
+%     Based on the information available the workflow will be as follow:
+%     \begin{itemize}
+%         \item calculation of statistic of the training data set (mean, median, skweness, kurtosis, correlation) to identify if transformation needed and presence of outliers.
+%         \item Application of ML models. The presence of the dependent variable allow the use of a supervised machine learning. Because of the linear nature and the similicity of the law governing spectroscopy, I will start by applying linear regression method and progressively increasing the sophistication in order to imporvo the metrics
+%         \item For all the operation desribed, python will be used. The version of the libraries can be found in the Jupyter nootebook attached.
+%     \end{itemize}

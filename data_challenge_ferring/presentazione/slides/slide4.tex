@@ -1,0 +1,16 @@
+\begin{frame}
+\frametitle{Data Preprocessing}
+Check the integrity of the training data set:
+\begin{itemize}
+    \item Null values (NaN): not present in the training data set (excluding 'Unnamed x' columns).
+    \item Calculation of the data set statistic (mean median difference, skweness, kurtosis):
+    \begin{itemize}
+        \item mean median difference, skweness, kurtosis: values in the range of a Normal (Gaussian) distribution -- no transformation needed.
+        \item outliers are searched using the Zscore:
+        \begin{itemize}
+            \item removing the outliers do not make significant change in the statistic 
+            \item removing outliers do not improve the performance of the models (not reported)
+        \end{itemize}
+    \end{itemize}
+    \end{itemize}
+\end{frame}

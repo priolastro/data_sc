@@ -1,0 +1,32 @@
+\begin{frame}
+    \frametitle{Defining a Strategy}
+    \metroset{block=fill}
+        \begin{exampleblock}{\textsc{Step by Step Operations}}
+            \begin{itemize}
+                \item Prefer supervised simple liner regression models (\textit{yref} is continuous):
+                \item Proceed by enhancing the sophistication of the model until good performances are obtained (starting from Linear Regression up to Ensemble models)
+                \item Simple linear models can better manage collinearities and provide a good level of variance (avoid overfitting)
+            \end{itemize}
+            \begin{itemize}
+                \item Redundant wavelenghts can be excluded if have low correlation with \textit{yref}.
+                \begin{itemize}
+                    \item Various models with different number of feautures will be trained.
+                    \item These models will be more solid to be used with different instruments (with different sampling strides) and faster to train in the future.
+                \end{itemize}
+            \end{itemize}
+            \end{exampleblock}
+    \end{frame}
+
+% \begin{frame}
+%     \frametitle{Distribution study}
+%     \begin{table}[]
+%         \input{pictures/distribution_tab_4_random.tex}
+%     \end{table}
+
+%     \begin{figure}
+%         \begin{center}
+%             \input{pictures/distribution_plot_yref.pgf}
+%         \end{center}
+%         \caption{A PGF histogram from \texttt{matplotlib}.}
+%     \end{figure}
+% \end{frame}

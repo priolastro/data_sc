@@ -1,0 +1,12 @@
+\begin{frame}
+    \frametitle{Model result: using all the feautures available}
+    \begin{table}[]
+        \input{pictures/models1.tex}
+    \end{table}
+    Model with low error (MAE, MSE, RMSE) and high $R^2$ are preferred. 
+    \begin{itemize}
+        \item low error - high confidence predicting testing data; high $R^2$ - high total variance explained by the model
+        \item SVR (with grid search) is the best model (probably due to the underlying linear law govening the relation reinforced by the supporting vectors) 
+        \item Other important metrics are AIC, AICc, BIC (\href{https://doi.org/10.3390/rs13193794}{Singh et al., 2021})
+    \end{itemize}
+\end{frame}

@@ -1,0 +1,32 @@
+\begin{frame}
+    \frametitle{Model result: with KBest Feautures}
+    \begin{table}[]
+        \input{pictures/models_k_best.tex}
+    \end{table}
+    Based on the former considerations:
+    \begin{itemize}
+        \item SVR is still the best models (low errors and high $R^2$)
+        \item The accureacy can be improved by tuning the SVR parameters
+        \item A total of 650 features are used (Kbest)
+    \end{itemize}
+    \textbf{Therefore, the SVR model will be used to obtain the final values}
+    % \begint{itemize}
+    %     \item The LR model, using only 150 over 700 feautures imporves the most compared to the other
+    %     \item The LR R model, using again all the avalibale feautures, do not change its performance a lot, probabliy beacuse of the regularization parameter in the loss function, is able to automatically manage the redundancy 
+    %     \item The SVR, using 650 feautures, get some shallow improvements in the performance metrics.
+    % \end{itemize}
+    % Because of the limited computer power, has been impossible to perform a cross validation evaluation and a grid search for the best parameters for the SVR model.
+
+
+
+
+
+    % Model with low error (MAE, MSE, RMSE) and high $R^2$ are preferred.
+
+    % \begin{itemize}
+    %     \item low MAE, MSE, RMSE mean that the model is able to predict with a high confidence testing data set
+    %     \item High value of $R^2$ is the ratio between the total variance explained by the model and the total variance. When $R^2$ equal 100 the data points overlap the model
+    % \end{itemize}
+    % Based on these consideration, SVR is the best model at these conditions. This is because of the better performance of the model as well as the gird research that allow the tuning of the parameters C and gamma defining the hyperplanes for the supporting vectors.\\
+    % Other important comparing metrics such as (AIC, AICc, BIC)  can be used (\href{https://doi.org/10.3390/rs13193794}{Singh et al., 2021})
+\end{frame}

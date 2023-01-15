@@ -1,0 +1,12 @@
+\begin{frame}
+    \frametitle{Prediction}
+    Is not possible to make prediction if the number of feautures available in the prediction set is different from the number of feautures used to train the model. For this reason:
+    \begin{itemize}
+        \item The common wavelengths between the prediction data set and training data set have been selected (considering only integer part -- i.e. 1124 in CAL500 is considered the same as 1124.47 in VAL\_HSI) 
+        \item 101 common feautures have been found
+        \item The model is trained again in the same way as found with the complete training data set
+        \item The predictions are obtained for each of the 80 samples averaging all the avalilabe 400 measures
+    \end{itemize}
+    The final predictions can be found in the \texttt{Predictions\_SalvatorePrioli.csv} file.
+    A copy of ipynb can also be found \href{https://github.com/priolastro/data-challenge/blob/main/main.ipynb}{here}
+\end{frame}

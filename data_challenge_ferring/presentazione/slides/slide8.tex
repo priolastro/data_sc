@@ -1,0 +1,24 @@
+\begin{frame}
+    \frametitle{Selecting most important feautures}
+    Recalling the (arbitrary) assumption that the property depends on a small frequency (wavelength) interval: 
+    \begin{itemize}
+        \item The most important feautures are searched ranking them by correlation with \textit{yref}
+        \item To exclude redundant feautures, the models are trained with increasing number of most important feautures (starting from 100 up to 700 with 50 stride)
+        \item Good compromise to avoid overfitting
+    \end{itemize}
+    Because of computer power limit (calculations performed on a "slow" macbook air):
+    \begin{itemize}
+        \item Not possible to go below 50 as step size
+        \item Gridsearch of C and gamma parameters for SVR for every stride not performed
+        \item K-fold cross validation (suggested when performing these calculations) not considered
+    \end{itemize}
+    % \begin{table}[]
+    %     \input{pictures/models.tex}
+    % \end{table}
+    % Model with low error (MAE, MSE, RMSE) and high $R^2$ are preferred.
+    % \begin{itemize}
+    %     \item low MAE, MSE, RMSE mean that the model is able to predict with a high confidence testing data set
+    %     \item High value of $R^2$ is the ratio between the total variance explained by the model and the total variance. When $R^2$ equal 100 the data points overlap the model
+    % \end{frame}
+    % Based on these consideration, SVR is the best model at these conditions. This is because of the better performance of the model as well as the gird research that allow the tuning of the parameters C and gamma defining the hyperplanes for the supporting vectors.
+\end{frame}

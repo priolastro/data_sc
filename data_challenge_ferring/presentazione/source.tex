@@ -1,0 +1,159 @@
+\documentclass[10pt,xcolor=svgnames,aspectratio=169]{beamer} %Beamer
+\usepackage{palatino} %font type
+\usefonttheme{metropolis} %Type of slides
+\usefonttheme[onlymath]{serif} %font type Mathematical expressions
+\usetheme[progressbar=frametitle,titleformat frame=smallcaps,numbering=counter]{metropolis} %This adds a bar at the beginning of each section.
+\useoutertheme[subsection=false]{miniframes} %Circles in the top of each frame, showing the slide of each section you are at
+
+\usepackage{appendixnumberbeamer} %enumerate each slide without counting the appendix
+\setbeamercolor{progress bar}{fg=Maroon!70!Coral} %These are the colours of the progress bar. Notice that the names used are the svgnames
+\setbeamercolor{title separator}{fg=DarkSalmon} %This is the line colour in the title slide
+\setbeamercolor{structure}{fg=black} %Colour of the text of structure, numbers, items, blah. Not the big text.
+\setbeamercolor{normal text}{fg=black!87} %Colour of normal text
+\setbeamercolor{alerted text}{fg=DarkRed!60!Gainsboro} %Color of the alert box
+\setbeamercolor{example text}{fg=Maroon!70!Coral} %Colour of the Example block text
+
+
+\setbeamercolor{palette primary}{bg=NavyBlue!50!DarkOliveGreen, fg=white} %These are the colours of the background. Being this the main combination and so one. 
+\setbeamercolor{palette secondary}{bg=NavyBlue!50!DarkOliveGreen, fg=white}
+\setbeamercolor{palette tertiary}{bg=NavyBlue!40!Black, fg= white}
+\setbeamercolor{section in toc}{fg=NavyBlue!40!Black} %Color of the text in the table of contents (toc)
+
+%These next packages are the useful for Physics in general, you can add the extras here. 
+\usepackage{amsmath,amssymb}
+\usepackage{slashed}
+\usepackage{cite}
+\usepackage{relsize}
+\usepackage{layouts}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{fontawesome}
+\usepackage[scale=2]{ccicons}
+\usepackage{pgfplots}
+\usepackage{graphicx} 
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{academicons}
+\usepackage{hyperref}
+\usepackage{marginnote}
+\usepackage{fontawesome}
+\usepackage{pgf}
+\usepackage{booktabs} 
+\usepackage{tikz}
+\usepgfplotslibrary{dateplot}
+\usepackage{geometry}
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{bluetemp}\xspace}}%metropolis}}\xspace}
+
+\title{Data Challenge}
+\author[Name]{Salvatore Prioli\\
+Ph.D and MSc in Computational Chemistry \\
+\\
+\footnotesize{\textit{University of Southern Denmark}}\\
+\footnotesize{\textit{Universita degli Studi di Siena}}\\
+\\
+\faPhoneSquare\ (+45) 50312038\\
+            \faEnvelopeSquare\ \href{salvatore.prioli@gmail.com}{salvatore.prioli@gmail.com}\\
+            \faEnvelopeSquare\ \href{prioli@sdu.dk}{prioli@sdu.dk}\\
+}
+\titlegraphic{\vspace{3.5cm}\hfill\includegraphics[scale=0.06]{pictures/pix3}}
+\subtitle{Data Scientist - Ferring Pharmaceuticals 
+% \includegraphics[scale=0.05]{pictures/ferring}\\ 
+% \small{\textit{\today}}
+}
+
+\begin{document}
+% \printinunitsof{in}\prntlen{\textwidth}
+
+{
+\setbeamercolor{background canvas}{bg=NavyBlue!50!DarkOliveGreen, fg=white}
+\setbeamercolor{normal text}{fg=white}
+\maketitle
+}%This is the colour of the first slide. bg= background and fg=foreground
+
+\metroset{titleformat frame=smallcaps} %This changes the titles for small caps
+
+% \begin{frame}{Outline}
+%   \setbeamertemplate{section in toc}[sections numbered] %This is numbering the sections
+%   \tableofcontents[hideallsubsections] %You can comment this line if you want to show the subsections in the table of contents
+% \end{frame}
+
+% \begin{frame}{Objectives}
+% \underline{\textsc{Some text:}}
+% \begin{small}
+% This is some small Text. 
+% \end{small}
+
+% \metroset{block=fill}
+% \begin{exampleblock}{\textsc{Example block}}
+% \begin{itemize}
+%     \item You know how to do itemize
+%     \item Also here
+% \end{itemize}
+% \end{exampleblock}
+% \end{frame}
+
+
+% \section{Introduction}
+
+% \begin{frame}[fragile]{Introduction: blah blah} %You can change fragile by standout
+% Text Text Text Text. \\You can change the size of the footnote text like  Text\footnote{\small{ here.}} Text\footnote{\large{And here.}} Text\footnote{\tiny{And here.}}
+% \begin{itemize} %The symbol of the items can be changed by which ever you want, this is just an example.
+%     \item[$\diamond$] Text,
+%     \item[$\diamond$] Text,
+%     \item[$\diamond$] Text.
+% \end{itemize}
+% An equation without number could be represented by:
+% \begin{equation*}
+%     c^{2} = a^{2} + b^{2}
+% \end{equation*}
+% That's all for this slide.
+% \end{frame}
+
+% \begin{frame}[standout]{This is other type of slide}
+% There is some text here.
+% And an equation with number:
+% \begin{equation}
+%     E^{2} = m^{2} + p^{2}
+% \end{equation}
+% \end{frame}
+
+% \include{Othersection}
+
+% \section{This is another section}
+% \begin{frame}{Frame Title} %You can also not write fragile or standout and you can see how it looks
+%     Hello world!
+% \end{frame}
+
+% \section{Final section}
+
+% \begin{frame}{Conclusion}
+%     These are the final words, you do your best to try to wake up everyone that was listening to your talk.
+% \end{frame}
+
+% {\setbeamercolor{palette primary}{fg=black, bg=orange!30} %You can change the colours
+% \begin{frame}[standout]
+%   Thank you! And thank to yourself because you did all the job. 
+% \end{frame}
+% }
+% \appendix
+
+% \begin{frame}{Back up}
+%     These slides won't appear in the table of contents and will not be counted as the total slides.
+% \end{frame}
+
+\input{slides/slide1}
+\input{slides/slide2}
+\input{slides/slide3}
+\input{slides/slide4}
+\input{slides/slide5}
+\input{slides/slide6}
+\input{slides/slide7}
+\input{slides/slide8}
+\input{slides/slide9}
+\input{slides/slide10}
+
+
+\end{document}
